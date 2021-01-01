@@ -1,0 +1,6 @@
+FROM node:12-alpine3.10
+
+RUN npm install -g laravel-echo-server
+WORKDIR /root
+COPY . .
+CMD ["laravel-echo-server","start"]
